@@ -1,0 +1,93 @@
+*{margin:0px;padding: 0px;outline: 0px}
+.wrapper{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.template{
+	width: 360px;
+	margin:auto;
+}
+
+
+
+.header{
+	background: #282923;
+}
+.header p {
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	color: white;
+}
+.content{
+	height: 100%;
+	background: #00ACD9;
+}
+.task p{
+	padding: 20px 0px 0px 145px;
+	font-family: 'Roboto', sans-serif;
+}
+.ip{
+	width: 285px;
+	border: 0px;
+	border-bottom: 1px solid #60666F;
+	margin: 21px;
+	margin-left: 40px;
+	padding: 10px;
+	background: #00ACD9;
+	border-radius: 5px;
+}
+.sub {
+	padding: 15px;
+	width: 307px;
+	margin: 20px 0px 10px 36px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #282923;
+	color: white;
+	border: 0px;
+	border-bottom: 1px solid #6F757E;
+	border-radius: 4px;
+}
+.btn {
+	padding: 13px;
+	width: 307px;
+	margin: 20px 0px 10px 30px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #282923;
+	color: white;
+	border: 0px;
+	border-bottom: 1px solid #6F757E;
+	border-radius: 4px;
+
+}
+.height{
+	margin-bottom: 200px;
+}
+.sizeOfIpBox {
+	padding: 5px;
+	margin-left: 41px;
+	border: 0px;
+	border-bottom: 1px solid #60666F;
+	background: #00ACD9;
+	border-radius: 5px;
+	width: 170px;
+}
+.btn-sm {
+	margin-left: 10px;
+	width: 100px;
+	padding: 4px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #282923;
+	color: white;
+	border: 0px;
+	border-bottom: 1px solid #6F757E;
+	border-radius: 5px;
+}
+.search-box{
+	margin-top: 30px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="cordova.js"></script>
+	<style>
+		#wrapper{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background: #00ACD9;
+		}
+		.header {
+		width: 100%;
+		background: #282923;
+		color: white;
+		font-size: 21px;
+		padding: 5px;
+		}
+		#doneLocation {
+			width: 100%;
+			padding: 5px;
+			background: #282923;
+			color: white;
+			border: 0px;
+			border-bottom: 1px solid #6F757E;
+			border-radius: 4px;
+			font-size: 21px;
+		}
+		#geomap{
+			width: 100%;
+			height: 400px;
+		}
+		#search_location {
+			background: #00ACD9;
+			border: 0px;
+			border-bottom: 1px solid #60666F;
+			border-radius: 5px;
+			margin: 0px 0px 0px 3px;
+		}
+		#btn {
+			background: #282923;
+			color: white;
+			border-radius: 8px;
+			margin: 4px 3px 1px 4px;
+			border: 0px;
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="map.css"> -->
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header">
+		<p>Location Alarm</p>
+		</div>
+		<form>
+			<div class="form-group input-group">
+ 			   <input type="text" id="search_location" class="form-control" placeholder="Search location">
+  				  <div class="input-group-btn">
+   				     <button id="btn" class="btn btn-default get_map" type="submit">
+       				     Locate
+       				 </button>
+   				 </div>
+			</div>
+		</form>
+
+<!-- display google map -->
+		<div id="geomap"></div>
+		<input type="text" class="search_addr" style="display: none;">
+		 <input type="text" class="search_latitude" style="display: none;">
+		<input type="text" class="search_longitude" style="display: none;">
+		<button  id="doneLocation"  name="doneLocation">Submit Location</button>
+		<button  id="d"  name="doneLocation">check</button>
+	</div>
+	
+<!-- display selected location information -->
+<!-- <h4>Location Details</h4>
+<p>Address: <input type="text" class="search_addr" size="45"></p>
+<p>Latitude: <input type="text" class="search_latitude" size="30"></p>
+<p>Longitude: <input type="text" class="search_longitude" size="30"></p> -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-smw29tG1TTnPkjScCtk-FDl-yqmjN2g"></script>
+<script src="selectLoc.js"></script>
+</body>
+</html>
